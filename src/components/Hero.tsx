@@ -1,7 +1,11 @@
 
 import { ArrowDown, Mail, Linkedin, MessageCircle } from 'lucide-react';
+import { useSearchParams } from 'react-router-dom';
 
 const Hero = () => {
+  const [searchParams] = useSearchParams();
+  const firstName = searchParams.get('first_name');
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -17,9 +21,12 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left">
             <div className="mb-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-                Hi, I'm{' '}
+                {firstName ? `Hi, ${firstName}` : 'Hi,'}
+                <br />
+                I'm Rao
+                <br />
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Rao Muneeb
+                  Muneeb
                 </span>
               </h1>
               <p className="text-xl sm:text-2xl text-gray-600 mb-6">
