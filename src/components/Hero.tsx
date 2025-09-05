@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left">
             <div className="mb-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-                {firstName ? `Hi, ${firstName}` : 'Hi,'}
+                Hi, {firstName ? <span className="text-green-600 font-bold">{firstName}</span> : ''}
                 <br />
                 I'm Rao
                 <br />
