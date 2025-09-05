@@ -61,7 +61,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-2">
                 <img
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
+                  src="/lovable-uploads/ffe19722-a6ab-4fa3-ad85-311489c3a1a9.png"
                   alt="Rao Muneeb - Digital Marketer & GTM Operations Engineer"
                   className="w-full h-full rounded-full object-cover"
                 />
