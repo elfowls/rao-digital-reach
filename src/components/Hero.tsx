@@ -1,5 +1,5 @@
 
-import { ArrowDown, Mail, Linkedin } from 'lucide-react';
+import { ArrowDown, Mail, Linkedin, MessageCircle } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -32,12 +32,15 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              <a 
+                href="https://wa.me/447492991611"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
               >
-                Get In Touch
-              </button>
+                <MessageCircle size={20} />
+                WhatsApp Me
+              </a>
               <button 
                 onClick={() => scrollToSection('services')}
                 className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300"
@@ -47,10 +50,13 @@ const Hero = () => {
             </div>
 
             <div className="flex gap-4 justify-center lg:justify-start">
-              <a href="mailto:rao@example.com" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow">
+              <a href="https://wa.me/447492991611" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow">
+                <MessageCircle size={24} className="text-green-600" />
+              </a>
+              <a href="mailto:rao.muneeb@example.com" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow">
                 <Mail size={24} className="text-blue-600" />
               </a>
-              <a href="https://linkedin.com/in/raomuneeb" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow">
+              <a href="https://www.linkedin.com/in/rao-muneeb-34aa51340/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow">
                 <Linkedin size={24} className="text-blue-600" />
               </a>
             </div>

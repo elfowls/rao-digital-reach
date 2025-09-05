@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Linkedin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,14 +18,14 @@ const Footer = () => {
               accelerate growth through strategic lead generation and optimized operations.
             </p>
             <div className="flex gap-4">
+              <a href="https://wa.me/447492991611" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
+                <MessageCircle size={20} />
+              </a>
               <a href="mailto:rao.muneeb@example.com" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Mail size={20} />
               </a>
-              <a href="https://linkedin.com/in/raomuneeb" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/rao-muneeb-34aa51340/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Linkedin size={20} />
-              </a>
-              <a href="https://twitter.com/raomuneeb" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Twitter size={20} />
               </a>
             </div>
           </div>

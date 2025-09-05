@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Send, Calendar } from 'lucide-react';
+import { Mail, MessageCircle, MapPin, Send, Calendar } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -127,19 +127,19 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">rao.muneeb@example.com</p>
+                    <a href="mailto:rao.muneeb@example.com" className="text-blue-600 hover:text-blue-700">rao.muneeb@example.com</a>
                     <p className="text-sm text-gray-500">I typically respond within 24 hours</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="text-white" size={20} />
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MessageCircle className="text-white" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-sm text-gray-500">Available Mon-Fri, 9 AM - 6 PM EST</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">WhatsApp</h4>
+                    <a href="https://wa.me/447492991611" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-medium">+44 7492 991611</a>
+                    <p className="text-sm text-gray-500">Preferred contact method - Quick response</p>
                   </div>
                 </div>
                 
